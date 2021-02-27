@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import dto.Soju;
 
 public class SojuRepository {
-	private ArrayList<Soju> listOfProducts=new ArrayList<Soju>();
+	private ArrayList<Soju> listOfSojus=new ArrayList<Soju>();
 	
 	public SojuRepository() {
 		Soju s1=new Soju("S1","C1",1300);
@@ -36,12 +36,12 @@ public class SojuRepository {
 		s4.setUnitsInStock(10000);
 		s4.setPer(21);
 		
-		listOfProducts.add(s1);
-		listOfProducts.add(s2);
-		listOfProducts.add(s3);
-		listOfProducts.add(s4);
+		listOfSojus.add(s1);
+		listOfSojus.add(s2);
+		listOfSojus.add(s3);
+		listOfSojus.add(s4);
 	}
-	public ArrayList<Soju> getAllProducts(){
-		return listOfProducts;
+	public ArrayList<Soju> getAllSojus(){
+		return listOfSojus;
 	}
 }

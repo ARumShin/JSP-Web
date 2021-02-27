@@ -18,13 +18,13 @@
 		</div>
 	</div>
 	<%
-		ArrayList<Soju> listOfProducts=sojuDAO.getAllProducts();
+		ArrayList<Soju> listOfSojus=sojuDAO.getAllSojus();
 	%>
 	<div class="container">
 		<div class="row" align="center">
 			<%
-				for(int i=0;i<listOfProducts.size();i++){
-					Soju s=listOfProducts.get(i);
+				for(int i=0;i<listOfSojus.size();i++){
+					Soju s=listOfSojus.get(i);
 			%>
 			<div class="col-md-4">
 				<h3><%=s.getsName() %></h3>
